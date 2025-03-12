@@ -1,7 +1,5 @@
 function sum(a, b) {
-    if (!Number.isInteger(a) || !Number.isInteger(b)) {
-        return "Dữ liệu không hợp lệ";
-    }
+    if (a % 1 !== 0 || b % 1 !== 0) return 0;
     return a + b;
 }
 console.log(sum(2, 6));
